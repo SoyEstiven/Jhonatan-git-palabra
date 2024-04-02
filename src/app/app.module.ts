@@ -1,20 +1,30 @@
+import { IonicRouteStrategy, IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { BrowserModule} from '@angular/platform-browser';
+import { RouteReuseStrategy } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TableroComponent } from './pages/tablero/tablero.component';
+import { CasillasComponent } from './component/casillas/casillas.component';
+import { FilaComponent } from './component/fila/fila.component';
+import { CeldaComponent } from './component/celda/celda.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableroComponent,
+    CasillasComponent,
+    FilaComponent,
+    CeldaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
