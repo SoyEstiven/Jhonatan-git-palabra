@@ -8,7 +8,12 @@ import { Component, Input, input } from '@angular/core';
 export class CasillasComponent {
   @Input() lapalabra!: string
   @Input() lasletras!: any []
-  filas = [1, 2, 3, 4, 5, 6]
+  filas = [1,2,3,4,5,6]
+Restriccion() {
   
+}
+
+
+
 }
 

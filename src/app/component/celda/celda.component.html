@@ -1,4 +1,2 @@
-<input type="text" [(ngModel)]="opcion" (keyup)="verificar()" maxlength="1" [ngClass]="{'acierto': css==='Acierto', 'ausente': css==='Ausente', 'present': css==='present'}">
-
-
+<input type="text" [(ngModel)]="opcion" (input)="verificar()" maxlength="1" [ngClass]="{'acierto': css==='Acierto', 'ausente': css==='Ausente', 'present': css==='present'}" (input)="siguiente($event)" >
 
